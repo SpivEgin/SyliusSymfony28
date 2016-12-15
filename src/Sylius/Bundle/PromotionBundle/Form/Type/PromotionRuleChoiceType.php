@@ -46,4 +46,12 @@ final class PromotionRuleChoiceType extends AbstractType
     {
         return 'sylius_promotion_rule_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

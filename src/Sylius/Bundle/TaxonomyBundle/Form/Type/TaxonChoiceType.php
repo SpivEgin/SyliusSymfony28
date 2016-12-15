@@ -102,6 +102,14 @@ final class TaxonChoiceType extends AbstractType
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
+
+    /**
      * @param string|null $rootCode
      * @param callable|null $filter
      *

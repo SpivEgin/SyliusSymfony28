@@ -81,4 +81,12 @@ final class ExchangeRateType extends AbstractResourceType
     {
         return 'sylius_exchange_rate';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

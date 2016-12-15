@@ -82,4 +82,12 @@ final class StringFilterType extends AbstractType
     {
         return 'sylius_grid_filter_string';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

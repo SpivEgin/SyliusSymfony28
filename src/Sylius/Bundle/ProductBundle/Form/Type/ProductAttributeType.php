@@ -43,4 +43,12 @@ final class ProductAttributeType extends AttributeType
     {
         return 'sylius_product_attribute';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

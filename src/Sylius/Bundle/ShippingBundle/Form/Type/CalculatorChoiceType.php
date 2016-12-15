@@ -60,4 +60,12 @@ final class CalculatorChoiceType extends AbstractType
     {
         return 'sylius_shipping_calculator_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

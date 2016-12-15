@@ -50,4 +50,12 @@ final class EntityFilterType extends AbstractType
     {
         return 'sylius_grid_filter_entity';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

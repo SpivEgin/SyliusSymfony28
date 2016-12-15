@@ -65,6 +65,14 @@ final class UnitFixedDiscountConfigurationType extends AbstractType
     /**
      * {@inheritdoc}
      */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getBlockPrefix()
     {
         return 'sylius_promotion_action_unit_fixed_discount_configuration';

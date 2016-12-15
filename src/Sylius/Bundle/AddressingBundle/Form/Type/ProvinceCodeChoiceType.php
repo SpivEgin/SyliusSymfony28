@@ -58,4 +58,12 @@ final class ProvinceCodeChoiceType extends AbstractType
     {
         return 'sylius_province_code_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

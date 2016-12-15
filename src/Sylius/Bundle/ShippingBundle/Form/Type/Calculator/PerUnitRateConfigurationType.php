@@ -62,4 +62,12 @@ final class PerUnitRateConfigurationType extends AbstractType
     {
         return 'sylius_shipping_calculator_per_unit_rate';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

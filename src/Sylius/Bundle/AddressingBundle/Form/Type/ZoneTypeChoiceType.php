@@ -53,4 +53,12 @@ final class ZoneTypeChoiceType extends AbstractType
     {
         return 'sylius_zone_type_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

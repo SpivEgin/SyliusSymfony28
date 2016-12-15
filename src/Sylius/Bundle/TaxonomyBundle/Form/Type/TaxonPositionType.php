@@ -52,4 +52,12 @@ final class TaxonPositionType extends AbstractResourceType
     {
         return 'sylius_taxon_position';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

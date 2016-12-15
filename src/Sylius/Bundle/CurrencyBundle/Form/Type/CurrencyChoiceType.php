@@ -77,4 +77,12 @@ final class CurrencyChoiceType extends AbstractType
     {
         return 'sylius_currency_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

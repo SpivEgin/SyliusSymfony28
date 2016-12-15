@@ -39,4 +39,12 @@ final class ShopUserType extends UserType
     {
         return 'sylius_shop_user';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

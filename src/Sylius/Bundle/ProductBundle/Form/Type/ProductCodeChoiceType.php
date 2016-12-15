@@ -58,4 +58,12 @@ final class ProductCodeChoiceType extends AbstractType
     {
         return 'sylius_product_code_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

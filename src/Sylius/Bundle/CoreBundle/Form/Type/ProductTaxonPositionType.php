@@ -38,4 +38,12 @@ final class ProductTaxonPositionType extends AbstractType
     {
         return 'sylius_product_taxon_position';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

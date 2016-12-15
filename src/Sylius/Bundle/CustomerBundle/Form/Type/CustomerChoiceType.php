@@ -77,4 +77,12 @@ final class CustomerChoiceType extends AbstractType
     {
         return 'sylius_customer_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

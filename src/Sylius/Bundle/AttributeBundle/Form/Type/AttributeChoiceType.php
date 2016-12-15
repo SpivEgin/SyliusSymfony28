@@ -79,4 +79,12 @@ abstract class AttributeChoiceType extends AbstractType
     {
         return 'sylius_attribute_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

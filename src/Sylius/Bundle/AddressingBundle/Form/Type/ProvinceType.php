@@ -45,4 +45,12 @@ final class ProvinceType extends AbstractResourceType
     {
         return 'sylius_province';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

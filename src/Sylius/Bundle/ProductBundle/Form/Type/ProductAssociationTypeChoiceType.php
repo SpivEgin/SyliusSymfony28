@@ -77,4 +77,12 @@ final class ProductAssociationTypeChoiceType extends AbstractType
     {
         return 'sylius_product_association_type_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

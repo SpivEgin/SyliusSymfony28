@@ -58,4 +58,12 @@ final class TaxonCodeChoiceType extends AbstractType
     {
         return 'sylius_taxon_code_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -61,4 +61,12 @@ final class CustomerRegistrationType extends AbstractResourceType
     {
         return 'sylius_customer_registration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -38,4 +38,12 @@ final class LocaleType extends AbstractResourceType
     {
         return 'sylius_locale';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

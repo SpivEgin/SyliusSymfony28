@@ -45,4 +45,12 @@ final class PaymentMethodTranslationType extends AbstractResourceType
     {
         return 'sylius_payment_method_translation';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

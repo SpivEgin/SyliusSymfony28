@@ -43,4 +43,12 @@ final class CustomerType extends AbstractResourceType
     {
         return 'sylius_customer';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

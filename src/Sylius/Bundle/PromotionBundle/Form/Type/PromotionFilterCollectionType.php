@@ -54,4 +54,12 @@ final class PromotionFilterCollectionType extends AbstractType
     {
         return 'sylius_promotion_filters';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }
