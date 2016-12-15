@@ -51,6 +51,7 @@ final class ThemeNameChoiceType extends AbstractType
 
                 return $choices;
             },
+            'choices_as_values' => true,
         ]);
     }
 

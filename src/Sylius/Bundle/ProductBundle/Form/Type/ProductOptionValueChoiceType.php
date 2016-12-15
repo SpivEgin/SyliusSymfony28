@@ -37,6 +37,7 @@ final class ProductOptionValueChoiceType extends AbstractType
                 'choice_value' => 'code',
                 'choice_label' => 'value',
                 'choice_translation_domain' => false,
+                'choices_as_values' => true,
             ])
             ->setRequired([
                 'option',

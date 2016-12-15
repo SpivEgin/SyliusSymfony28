@@ -42,6 +42,7 @@ final class StringFilterType extends AbstractType
                         'sylius.ui.in' => StringFilter::TYPE_IN,
                         'sylius.ui.not_in' => StringFilter::TYPE_NOT_IN,
                     ],
+                    'choices_as_values' => true,
                 ])
             ;
         }

@@ -41,6 +41,7 @@ final class CalculatorChoiceType extends AbstractType
         $resolver
             ->setDefaults([
                 'choices' => array_flip($this->calculators),
+                'choices_as_values' => true,
             ])
         ;
     }

@@ -59,6 +59,7 @@ final class CustomerChoiceType extends AbstractType
             'choice_value' => 'email',
             'choice_label' => 'name',
             'choice_translation_domain' => false,
+            'choices_as_values' => true,
         ]);
     }
 

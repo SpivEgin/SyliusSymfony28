@@ -41,6 +41,7 @@ final class AttributeTypeChoiceType extends AbstractType
         $resolver->setDefaults([
             'choices' => array_flip($this->attributeTypes),
             'choice_translation_domain' => false,
+            'choices_as_values' => true,
         ]);
     }
 

@@ -50,7 +50,8 @@ final class ResourceChoiceType extends AbstractType
                 },
                 'function' => function (RepositoryInterface $repository, Options $options) {
                     return $repository->findAll();
-                }
+                },
+                'choices_as_values' => true,
             ])
             ->setRequired(['resource'])
         ;

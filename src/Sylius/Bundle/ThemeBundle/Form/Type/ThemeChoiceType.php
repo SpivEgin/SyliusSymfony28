@@ -48,6 +48,7 @@ final class ThemeChoiceType extends AbstractType
             'choice_label' => function (ThemeInterface $theme) {
                 return (string) $theme;
             },
+            'choices_as_values' => true,
         ]);
     }
 

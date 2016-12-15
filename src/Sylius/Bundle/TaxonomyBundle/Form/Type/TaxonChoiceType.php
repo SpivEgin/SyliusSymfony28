@@ -87,6 +87,7 @@ final class TaxonChoiceType extends AbstractType
                 'choice_translation_domain' => false,
                 'root_code' => null,
                 'filter' => null,
+                'choices_as_values' => true,
             ])
             ->setAllowedTypes('root_code', ['string', 'null'])
             ->setAllowedTypes('filter', ['callable', 'null'])

@@ -112,6 +112,7 @@ final class ShippingMethodType extends AbstractResourceType
                 'multiple' => false,
                 'expanded' => true,
                 'label' => 'sylius.form.shipping_method.category_requirement',
+                'choices_as_values' => true,
             ])
             ->add('calculator', CalculatorChoiceType::class, [
                 'label' => 'sylius.form.shipping_method.calculator',
