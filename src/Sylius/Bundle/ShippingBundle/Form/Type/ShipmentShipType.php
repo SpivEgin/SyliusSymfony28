@@ -40,4 +40,12 @@ final class ShipmentShipType extends AbstractResourceType
     {
         return 'sylius_shipment_ship';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

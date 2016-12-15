@@ -62,4 +62,12 @@ class CartItemType extends AbstractResourceType
     {
         return 'sylius_cart_item';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

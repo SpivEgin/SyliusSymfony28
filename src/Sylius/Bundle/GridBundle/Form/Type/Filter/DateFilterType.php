@@ -66,4 +66,12 @@ final class DateFilterType extends AbstractType
     {
         return 'sylius_grid_filter_date';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

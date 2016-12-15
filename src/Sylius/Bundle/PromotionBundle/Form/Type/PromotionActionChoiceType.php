@@ -58,4 +58,12 @@ final class PromotionActionChoiceType extends AbstractType
     {
         return 'sylius_promotion_action_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -43,4 +43,12 @@ final class ShopUserRegistrationType extends AbstractResourceType
     {
         return 'sylius_shop_user_registration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

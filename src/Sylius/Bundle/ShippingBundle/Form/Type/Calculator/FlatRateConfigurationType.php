@@ -62,4 +62,12 @@ final class FlatRateConfigurationType extends AbstractType
     {
         return 'sylius_shipping_calculator_flat_rate';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

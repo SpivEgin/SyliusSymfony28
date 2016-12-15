@@ -44,4 +44,12 @@ final class AdminUserType extends UserType
     {
         return 'sylius_admin_user';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

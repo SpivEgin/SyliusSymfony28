@@ -99,6 +99,14 @@ final class ZoneType extends AbstractResourceType
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
+
+    /**
      * @param string $zoneMemberType
      *
      * @return string

@@ -45,4 +45,12 @@ final class NthOrderConfigurationType extends AbstractType
     {
         return 'sylius_promotion_rule_nth_order_configuration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

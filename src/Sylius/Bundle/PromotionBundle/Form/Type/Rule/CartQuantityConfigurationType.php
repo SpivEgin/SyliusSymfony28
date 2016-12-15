@@ -45,4 +45,12 @@ final class CartQuantityConfigurationType extends AbstractType
     {
         return 'sylius_promotion_rule_cart_quantity_configuration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -61,4 +61,12 @@ final class ProductGenerateVariantsType extends AbstractResourceType
     {
         return 'sylius_product_generate_variants';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

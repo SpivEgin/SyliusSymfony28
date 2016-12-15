@@ -80,4 +80,12 @@ final class ZoneCodeChoiceType extends AbstractType
     {
         return 'sylius_zone_code_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -74,4 +74,12 @@ final class ShipmentType extends AbstractType
     {
         return 'sylius_checkout_shipment';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

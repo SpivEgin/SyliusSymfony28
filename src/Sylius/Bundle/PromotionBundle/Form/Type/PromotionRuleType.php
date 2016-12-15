@@ -82,4 +82,12 @@ final class PromotionRuleType extends AbstractResourceType
     {
         return 'sylius_promotion_rule';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -59,4 +59,12 @@ final class ProductVariantMatchType extends AbstractType
     {
         return 'sylius_product_variant_match';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

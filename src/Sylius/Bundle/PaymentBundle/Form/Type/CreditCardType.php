@@ -62,6 +62,14 @@ final class CreditCardType extends AbstractResourceType
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
+
+    /**
      * Get years to add as choices in expiryYear.
      *
      * @return array

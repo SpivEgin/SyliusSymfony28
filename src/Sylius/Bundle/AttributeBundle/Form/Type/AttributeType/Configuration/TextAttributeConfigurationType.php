@@ -42,4 +42,12 @@ final class TextAttributeConfigurationType extends AbstractType
     {
         return 'sylius_attribute_type_configuration_text';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

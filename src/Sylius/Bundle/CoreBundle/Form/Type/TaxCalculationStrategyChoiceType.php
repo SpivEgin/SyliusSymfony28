@@ -60,4 +60,12 @@ final class TaxCalculationStrategyChoiceType extends AbstractType
     {
         return 'sylius_tax_calculation_strategy_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

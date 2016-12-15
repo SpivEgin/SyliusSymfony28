@@ -89,4 +89,12 @@ final class LocaleChoiceType extends AbstractType
     {
         return 'sylius_locale_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

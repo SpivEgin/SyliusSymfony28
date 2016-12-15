@@ -58,4 +58,12 @@ final class ProductFilterConfigurationType extends AbstractType
     {
         return 'sylius_promotion_action_filter_product_configuration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

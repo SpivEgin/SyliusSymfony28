@@ -46,4 +46,12 @@ final class UserChangePasswordType extends AbstractResourceType
     {
         return 'sylius_user_change_password';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -41,4 +41,12 @@ abstract class ImageType extends AbstractResourceType
     {
         return 'sylius_image';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

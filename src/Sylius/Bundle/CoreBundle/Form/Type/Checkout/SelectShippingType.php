@@ -38,4 +38,12 @@ final class SelectShippingType extends AbstractResourceType
     {
         return 'sylius_checkout_select_shipping';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

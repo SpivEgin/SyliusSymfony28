@@ -51,4 +51,12 @@ final class ProductOptionType extends AbstractResourceType
     {
         return 'sylius_product_option';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

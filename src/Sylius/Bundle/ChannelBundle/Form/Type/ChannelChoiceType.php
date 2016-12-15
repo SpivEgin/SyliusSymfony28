@@ -77,4 +77,12 @@ final class ChannelChoiceType extends AbstractType
     {
         return 'sylius_channel_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -50,4 +50,12 @@ final class GenderType extends AbstractType
     {
         return 'sylius_gender';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

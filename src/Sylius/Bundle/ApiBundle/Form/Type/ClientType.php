@@ -39,4 +39,12 @@ final class ClientType extends AbstractResourceType
     {
         return 'sylius_api_client';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

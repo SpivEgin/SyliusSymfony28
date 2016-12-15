@@ -43,4 +43,12 @@ final class ProductAssociationType extends AbstractResourceType
     {
         return 'sylius_product_association';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -43,4 +43,12 @@ final class UserResetPasswordType extends AbstractResourceType
     {
         return 'sylius_user_reset_password';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

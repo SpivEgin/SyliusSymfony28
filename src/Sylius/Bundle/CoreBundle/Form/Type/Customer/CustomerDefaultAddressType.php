@@ -48,4 +48,12 @@ final class CustomerDefaultAddressType extends AbstractType
     {
         return 'sylius_customer_default_address';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

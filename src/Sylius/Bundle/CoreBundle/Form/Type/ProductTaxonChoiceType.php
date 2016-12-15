@@ -58,4 +58,12 @@ final class ProductTaxonChoiceType extends AbstractType
     {
         return 'sylius_product_taxon_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

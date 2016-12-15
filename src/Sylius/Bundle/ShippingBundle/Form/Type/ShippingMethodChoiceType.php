@@ -137,4 +137,12 @@ final class ShippingMethodChoiceType extends AbstractType
     {
         return 'sylius_shipping_method_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

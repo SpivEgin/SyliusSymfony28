@@ -55,4 +55,12 @@ final class PercentageDiscountConfigurationType extends AbstractType
     {
         return 'sylius_promotion_action_percentage_discount_configuration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

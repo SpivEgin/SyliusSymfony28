@@ -122,4 +122,12 @@ final class ResourceTranslationsType extends AbstractType implements EventSubscr
     {
         return 'sylius_translations';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

@@ -46,4 +46,12 @@ final class CustomerGroupConfigurationType extends AbstractType
     {
         return 'sylius_promotion_rule_customer_group_configuration';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

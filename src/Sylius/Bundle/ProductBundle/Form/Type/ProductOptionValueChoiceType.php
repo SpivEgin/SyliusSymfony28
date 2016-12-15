@@ -60,4 +60,12 @@ final class ProductOptionValueChoiceType extends AbstractType
     {
         return 'sylius_product_option_value_choice';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

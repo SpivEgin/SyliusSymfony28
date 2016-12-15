@@ -84,4 +84,12 @@ final class PromotionType extends AbstractResourceType
     {
         return 'sylius_promotion';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }

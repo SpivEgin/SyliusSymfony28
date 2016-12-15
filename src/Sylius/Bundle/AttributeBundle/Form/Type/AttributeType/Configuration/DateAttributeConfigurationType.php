@@ -39,4 +39,12 @@ final class DateAttributeConfigurationType extends AbstractType
     {
         return 'sylius_attribute_type_configuration_date';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return $this->getBlockPrefix();
+    }
 }
