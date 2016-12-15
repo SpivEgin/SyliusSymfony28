@@ -60,6 +60,7 @@ final class CustomerGroupChoiceType extends AbstractType
             'choice_label' => 'name',
             'choice_translation_domain' => false,
             'label' => 'sylius.form.customer.group',
+            'choices_as_values' => true,
         ]);
     }
 

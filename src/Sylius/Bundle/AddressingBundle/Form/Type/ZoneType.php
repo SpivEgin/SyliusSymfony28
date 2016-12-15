@@ -67,6 +67,7 @@ final class ZoneType extends AbstractResourceType
                     'label' => 'sylius.form.zone.scope',
                     'placeholder' => 'sylius.form.zone.select_scope',
                     'required' => false,
+                    'choices_as_values' => true,
                 ])
             ;
         }

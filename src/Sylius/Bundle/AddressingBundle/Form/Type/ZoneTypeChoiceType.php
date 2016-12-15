@@ -34,6 +34,7 @@ final class ZoneTypeChoiceType extends AbstractType
                     'sylius.form.zone.types.zone' => ZoneInterface::TYPE_ZONE,
                 ],
                 'label' => 'sylius.form.zone.type',
+                'choices_as_values' => true,
             ])
         ;
     }

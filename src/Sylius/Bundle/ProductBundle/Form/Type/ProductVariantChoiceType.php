@@ -50,6 +50,7 @@ final class ProductVariantChoiceType extends AbstractType
                 'choice_translation_domain' => false,
                 'multiple' => false,
                 'expanded' => true,
+                'choices_as_values' => true,
             ])
             ->setRequired([
                 'product',
